@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Todos from "./components/Todos";
-class App extends Component {
+class App extends React.Component {
   state = {
     todos: [
       {
@@ -26,8 +26,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <h1>This todo list</h1>
-        <Todos />
+        <Todos todos={this.state.todos} />
       </div>
     );
   }
