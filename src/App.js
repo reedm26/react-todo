@@ -21,6 +21,7 @@ class App extends React.Component {
       }
     ]
   };
+  // toggle the the strike out
   markComplete = id => {
     this.setState({
       todos: this.state.todos.map(todo => {
