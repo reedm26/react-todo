@@ -32,6 +32,9 @@ class App extends Component {
       })
     });
   };
+  delTodo = id => {
+    console.log("testing delete");
+  };
   render() {
     console.log(this.state.todos);
 
